@@ -1,3 +1,10 @@
+/*
+Scrivere un programma in C che chiede all'utente un numero intero
+positivo. Il programma converte il numero in binario naturale
+mediante il metodo dei resti mostrando il risultato dall'ultima
+cifra alla prima.
+*/
+
 #include <stdio.h>
 
 int main(){

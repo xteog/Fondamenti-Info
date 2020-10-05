@@ -1,3 +1,9 @@
+/*
+Scrivere un programma in C che acquisisce un numero maggiore di 1. 
+Il programma stabilisce se il numero è primo o meno e visualizza un 
+apposito messaggio con il risultato.
+*/
+
 #include<stdio.h>
 
 int main()

@@ -1,3 +1,7 @@
+/*
+Scrivere un programma in C che visualizza la tabella pitagorica.
+*/
+
 #include <stdio.h>
 
 int main(){
