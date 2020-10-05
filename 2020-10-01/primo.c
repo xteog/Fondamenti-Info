@@ -8,6 +8,11 @@ int main()
         cond = n % i != 0;
         i++;
     }
-    printf("%d", cond);
+
+    if(cond)
+    	printf("Primo\n");
+    else
+    	printf("Non primo\n");
+
     return 0;
 }
