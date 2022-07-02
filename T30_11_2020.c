@@ -31,7 +31,7 @@ struct posizione
 /* Funzione che legge i dati nel file. */
 struct posizione* leggi_traiettoria(char *nomefile, int *len )
 {
-   struct posizione *ds;
+   struct posizione *ds, ciao;
    int i;
    FILE *f;
    double spostamento_x;
@@ -46,7 +46,7 @@ struct posizione* leggi_traiettoria(char *nomefile, int *len )
    }
    for(i=0; feof(f)==0;i++)
    {
-      fscanf(f,"%lf %lf %lf",ds<-spostamento_x, ds<-spostamento_y, ds<-spostamento_z);
+      fscanf(f,"%lf %lf %lf", &ciao.spostamento_x, &ciao.spostamento_y, &ciao.spostamento_z);
    }
 
    ds=malloc(sizeof(struct posizione)*i);
@@ -64,9 +64,6 @@ struct posizione* leggi_traiettoria(char *nomefile, int *len )
    *len=i;
    fclose(f);
    return ds;
-   }
-
-   fclose(f);
 
   /* SE NECESSARIO AGGIUNGERE L'ISTRUZIONE RETURN. */
 }
